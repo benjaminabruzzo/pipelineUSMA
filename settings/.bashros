@@ -1,0 +1,40 @@
+################## \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ ###########################
+#Define the wifi ip address variable wifADDR (will supercede ethernet if wifi is available
+eth0ADDR=$(ifconfig eno1  | grep 'inet addr:'| cut -d: -f2 | awk '{ print $1}')
+eth1ADDR=$(ifconfig eth1  | grep 'inet addr:'| cut -d: -f2 | awk '{ print $1}')
+wifiADDR=$(ifconfig wlp3s0  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}')
+if [ $wifiADDR ]; then
+    ADDR=$wifiADDR
+else
+  if [ $eth0ADDR ]; then
+    ADDR=$eth0ADDR
+  else
+    ADDR=$eth1ADDR
+  fi
+fi
+
+if [ -f /opt/ros/kinetic/setup.bash ] ; then
+    source /opt/ros/kinetic/setup.bash
+else
+    echo "ROS is not installed yet. After installing, please"
+    echo "source your .bashrc again by typing:"
+    echo "source ~/.bashrc"
+fi
+
+export ROS_PACKAGE_PATH=~/ros:$ROS_PACKAGE_PATH
+export ROS_CATKIN_DIR=~/ros/
+# export ROS_HOSTNAME=localhost
+export ROBOT_IP=$ADDR
+export IP_$HOSTNAME=$ADDR
+export ROS_HOSTNAME=$ADDR
+# export ROS_MASTER_URI=http://localhost:11311
+export ROS_MASTER_URI=http://$ADDR:11311
+export EDITOR='emacs -nw'
+export ROS_PARALLEL_JOBS=-j4
+
+echo ROS_MASTER_URI: $ROS_MASTER_URI
+source ~/ros/devel/setup.bash
+
+################## /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ ########################
+
+cd ~/ros

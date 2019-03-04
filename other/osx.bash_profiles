@@ -1,0 +1,18 @@
+#!/bin/bash
+
+alias hideHidden='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias showHidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+
+en0ADDR=$(ifconfig en0 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+en1ADDR=$(ifconfig en1 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+en2ADDR=$(ifconfig en2 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+en3ADDR=$(ifconfig en3 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+en4ADDR=$(ifconfig en4 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+ppp0ADDR=$(ifconfig ppp0 | awk '{ print $2}' | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}")
+
+echo " vpn: " $ppp0ADDR
+echo "wifi: " $en0ADDR
+echo " en1: " $en1ADDR
+echo " en2: " $en2ADDR
+echo " en3: " $en3ADDR
+echo " en4: " $en4ADDR

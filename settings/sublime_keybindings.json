@@ -1,0 +1,17 @@
+[
+	{ "keys": ["f1"], "command": "fold_by_level", "args": {"level": 1} },
+	{ "keys": ["f2"], "command": "fold_by_level", "args": {"level": 2} },
+	{ "keys": ["f3"], "command": "fold_by_level", "args": {"level": 3} },
+	{ "keys": ["f4"], "command": "fold_by_level", "args": {"level": 4} },
+	{ "keys": ["f5"], "command": "refresh_folder_list" },	
+	{ "keys": ["f6"], "command": "build" },	
+	{ "keys": ["f7"], "command": "build" },
+	{ "keys": ["f8"], "command": "build" },	
+	{ "keys": ["f9"], "command": "build" },
+	{ "keys": ["f10"], "command": "build" },	
+	{ "keys": ["f11"], "command": "build" },
+	{ "keys": ["f12"], "command": "build" },	
+
+	// word wrap 
+	{"keys": ["ctrl+alt+shift+w"],"command": "toggle_setting","args": {"setting": "word_wrap"}}
+]

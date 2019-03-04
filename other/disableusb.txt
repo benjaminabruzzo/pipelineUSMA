@@ -1,0 +1,7 @@
+To really disable and enable USB, lets say port 3 and device 2 (you can get the information from lsusb -t)
+
+    echo '3-2' |sudo tee /sys/bus/usb/drivers/usb/unbind
+    echo '3-2' |sudo tee /sys/bus/usb/drivers/usb/bind
+
+    echo '3-11' |sudo tee /sys/bus/usb/drivers/usb/unbind
+    echo '3-11' |sudo tee /sys/bus/usb/drivers/usb/bind

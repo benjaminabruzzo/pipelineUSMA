@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gtk-redshift -l geoclue2 -t 6500:3000 -b 1.0:0.4
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=autostart-redshift
+Name=autostart-redshift
+Comment[en_US]=\sautostart redshift
+Comment=\sautostart redshift

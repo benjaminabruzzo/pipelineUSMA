@@ -1,0 +1,9 @@
+
+        Connection Name: Stevens VPN Tunnel All Traffic
+        Gateway: vpn.stevens.edu
+        Group Name: CiscoClient
+        User Password: Your Stevens password
+        Group Password: SITvpn
+        User Name: Your Stevens username
+        Domain: CAMPUS
+        change the box next to NAT Traversal to Disabled

@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/ros
+catkin_make $1
+source ~/ros/devel/setup.sh
+echo 'made and sourced'

@@ -1,0 +1,68 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Graphics card settings for m6500 laptop : enabling second monitor
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ..$ sudo ubuntu-drivers devices
+# == /sys/devices/pci0000:00/0000:00:03.0/0000:01:00.0 ==
+# modalias : pci:v000010DEd0000061Fsv00001028sd000002EFbc03sc00i00
+# vendor   : NVIDIA Corporation
+# model    : G92GLM [Quadro FX 3800M]
+# driver   : nvidia-304 - third-party free
+# driver   : nvidia-340 - third-party free recommended
+# driver   : xserver-xorg-video-nouveau - distro free builtin
+
+
+# DO NOT USE: (20190213)
+# software & updates >> legacy binary drier 304.135 and 304.14 :: Both break on 4.15.0-45-generic 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# This worked 20190213 
+
+
+sudo add-apt-repository ppa:graphics-drivers/ppa
+
+sudo apt-get update
+
+# sudo apt-cache search '^nvidia-[:digit]' --names-only
+# The 340.xx driver supports the following set of GPUs.
+# Quadro FX 3800M 	0x061F
+sudo apt-get install -y nvidia-340
+# choose gmd3 (not lightdm)
+sudo reboot
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# sudo apt-get install compizconfig-settings-manager
+# ccsm
+
+# x
+# ubrandr --addmode DP-1 1920x1200
+# xrandr --addmode DP-2 1920x1200
+
+# xrandr --output DP-1 --mode 1920x1200 --right-of LVDS-1
+# xrandr --output DP-2 --mode 1920x1200 --right-of LVDS-1
+
+
+# xrandr --output DP-1 --auto --same-as LVDS-1
+
+
+# sudo apt-get install --install-recommends linux-generic-hwe-16.04 xserver-xorg-hwe-16.04 
+
+
+# lspci | grep VGA
+
+# 01:00.0 VGA compatible controller: NVIDIA Corporation G92GLM [Quadro FX 3800M] (rev a2)
+
+
+# sudo add-apt-repository ppa:graphics-drivers/ppa
+
+# sudo apt-get update
+
+# sudo apt-get install nvidia-
+
+# sudo apt-get install nvidia-340
+
+
+
+
