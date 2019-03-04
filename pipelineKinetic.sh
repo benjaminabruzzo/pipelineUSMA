@@ -21,7 +21,3 @@ sudo update-grub && sudo reboot # reboot required
 ####### Install ros packages
 cd ~/pipelineUSMA/config && bash install_packages.sh
 
-# install rclone seperately because it needs to be configured
-cd ~/pipelineUSMA/config && bash install_rclone.sh
-
-
