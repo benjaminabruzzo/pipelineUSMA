@@ -1,5 +1,7 @@
 # Installing Ubuntu Gnome 16.04.4 and Ros Kinetic 
 
+This may be a little crufty, but it'll get you started with my USMA repos
+
 	# Boot from flash drive
 	[check] Download update while installing gnome
 	[check] install third party software
