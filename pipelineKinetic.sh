@@ -1,14 +1,14 @@
 
-cd ~/pipelineUSMA/config && bash install_ros_kinetic.sh && cd ~/pipelineUSMA/config && sudo reboot
+cd ~/pipelineUSMA/config && bash install_ros_kinetic.sh && sudo reboot
 # reboot
-cd ~/pipelineUSMA/config && bash init_ros.sh && cd ~/pipelineUSMA/config
+cd ~/pipelineUSMA/config && bash init_ros.sh && cd ~/pipelineUSMA
 # restart terminal
 
 ####### pointgrey camera driver
 # # Download flycap from pointgrey: https://www.ptgrey.com/support/downloads
-cd ~/pipelineUSMA/config && bash setup_flycap.sh
+cd ~/pipelineUSMA/config && bash setup_flycap.sh 
 
-cd ~/pipelineUSMA/config && bash install_camera_drivers.sh && cd ~/pipelineUSMA/config
+cd ~/pipelineUSMA/config && bash install_camera_drivers.sh
 #   ### update /etc/default/grub
 sudo gedit /etc/default/grub
 #   # in etc/default/grub find and replace
@@ -19,21 +19,9 @@ sudo gedit /etc/default/grub
 sudo update-grub && sudo reboot # reboot required
 
 ####### Install ros packages
-# After reboot:
-# Download and extract blender.tar to downloads
-# https://www.blender.org/download/
-cd ~/pipelineUSMA/config && bash install_packages.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_packages.sh
 
 # install rclone seperately because it needs to be configured
-cd ~/pipelineUSMA/config && bash install_rclone.sh && cd ~/pipelineUSMA
-
-
-## Install MATLAB
-cd ~/Downloads/matlab* && sudo sh install
-cd ~/pipelineUSMA/config && bash config_matlab.sh && cd ~/pipelineUSMA/config
-
-# # Gitlab
-# cd ~/pipelineUSMA/config && sudo bash install_gitlab.sh && cd ~/pipelineUSMA/config
-# sudo EXTERNAL_URL="venus" apt-get install -y gitlab-ee
+cd ~/pipelineUSMA/config && bash install_rclone.sh
 
 

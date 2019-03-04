@@ -7,8 +7,6 @@ echo "source ~/ros/devel/setup.sh" >> ~/ros/build_usma.bash
 cd ~/ros && chmod +x build_usma.bash && bash build_usma.bash
 
 
-cp ~/pipelineUSMA/config/pull_packages.sh ~/ros
-
 #### usma_ardrone package
 cd ~/ros/src && mkdir usma_ardrone && cd usma_ardrone
 git init && git remote add gh git@github.com:westpoint-robotics/usma_ardrone.git && git pull gh master
