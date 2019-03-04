@@ -30,4 +30,4 @@ mkdir -p ~/matlab/schemes && cd ~/matlab/schemes
 git init && git remote add bb git@bitbucket.org:benjaminabruzzo/matlab-schemes.git && git pull bb master
 
 
-cd ~/pipeline16044/config
+cd ~/pipelineUSMA/config

@@ -7,13 +7,13 @@ rosdep install ardrone_autonomy
 
 
 
-cd ~/pipeline16044/config && bash install_multimaster.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash install_hast_space.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash install_blender.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash init_usma.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash install_tex.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash setup_redshift.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash install_screenrecorder.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash setup_dso.sh && cd ~/pipeline16044
-cd ~/pipeline16044/config && bash install_denmpc.sh && cd ~/pipeline16044
+cd ~/pipelineUSMA/config && bash install_multimaster.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_hast_space.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_blender.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash init_usma.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_tex.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash setup_redshift.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_screenrecorder.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash setup_dso.sh && cd ~/pipelineUSMA
+cd ~/pipelineUSMA/config && bash install_denmpc.sh && cd ~/pipelineUSMA
 echo "!!! restart terminal !!!"

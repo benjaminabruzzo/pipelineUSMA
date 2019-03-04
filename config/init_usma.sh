@@ -7,7 +7,7 @@ echo "source ~/ros/devel/setup.sh" >> ~/ros/build_usma.bash
 cd ~/ros && chmod +x build_usma.bash && bash build_usma.bash
 
 
-cp ~/pipeline16044/config/pull_packages.sh ~/ros
+cp ~/pipelineUSMA/config/pull_packages.sh ~/ros
 
 #### usma_ardrone package
 cd ~/ros/src && mkdir usma_ardrone && cd usma_ardrone

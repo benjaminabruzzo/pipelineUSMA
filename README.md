@@ -23,21 +23,15 @@
 	ssh-keygen # hit enter until it stops asking questions
 	ssh-agent /bin/bash &&	ssh-add ~/.ssh/id_rsa
 
-	scp benjamin@saturn.local:~/.ssh/id_rsa.pub ~/.ssh/authorized_keys && scp ~/.ssh/id_rsa.pub benjamin@saturn.local:~/.ssh/juno.pub
-	
 	echo "Now go add your ssh key to github and bitbucket"
 	## Set up Firefox:
-	### Turn off password saver
-	### Set bitbucket to home page
-	### Add ssh key to bitbucket
 	### Add ssh key to github
 
 	### git init
 	echo 'export HOST=$HOSTNAME' >> ~/.bashrc
-	git config --global user.email "abruzzo2@gmail.com" && git config --global user.name "benjamin@saturn"
+	git config --global user.email "user1@westpoint.edu" && git config --global user.name "user1@brix03"
 	mkdir -p ~/pipeline16044 && cd ~/pipeline16044 && git init
-	git remote add bb git@bitbucket.org:benjaminabruzzo/pipeline16044.git && git pull bb master
-	# https://bitbucket.di2e.net/projects/AGSREPO
+	git remote add gh git@github.com:benjaminabruzzo/pipelineUSMA.git
 	git remote add ags ssh://git@bitbucket.di2e.net:7999/agsrepo/abruzzo-pipeline16044.git
 
 

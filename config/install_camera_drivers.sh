@@ -1,4 +1,4 @@
-mkdir -p ~/.ros/camera_info && cp ~/pipeline16044/camera_info/* ~/.ros/camera_info/
+mkdir -p ~/.ros/camera_info && cp ~/pipelineUSMA/camera_info/* ~/.ros/camera_info/
 
 ####### pointgrey camera driver
 sudo apt-get install -y coriander ros-kinetic-pointgrey-camera-driver ros-kinetic-camera1394

@@ -1,4 +1,4 @@
-# bash ~/pipeline16044/config/install_blender.sh
+# bash ~/pipelineUSMA/config/install_blender.sh
 
 touch ~/.local/share/applications/blender.desktop
 echo '#!/usr/bin/env xdg-open' >> ~/.local/share/applications/blender.desktop

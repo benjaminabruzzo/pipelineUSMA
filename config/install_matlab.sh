@@ -38,4 +38,4 @@ mkdir -p ~/Documents/MATLAB && touch /home/benjamin/Documents/MATLAB/startup.m
 echo "cd('~/matlab/utilities/');" >> /home/benjamin/Documents/MATLAB/startup.m
 echo "startup_1604" >> /home/benjamin/Documents/MATLAB/startup.m
 
-cd ~/pipeline16044/
+cd ~/pipelineUSMA/

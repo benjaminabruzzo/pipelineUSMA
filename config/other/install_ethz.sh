@@ -15,4 +15,4 @@ sudo make install
 cd ~/ros/src/ && git clone https://bitbucket.org/adrlab/ct.git && cd ~/ros/
 catkin build ct ct_core ct_doc ct_models ct_optcon ct_rbd -DCMAKE_BUILD_TYPE=RELEASE 
 
-cp ~/pipeline16044/config/build_ct.sh ~/ros
+cp ~/pipelineUSMA/config/build_ct.sh ~/ros

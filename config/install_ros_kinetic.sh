@@ -13,9 +13,9 @@ rosdep update
 
 echo ' ' >> ~/.bashrc
 echo '. ~/.ros/.bashros' >> ~/.bashrc
-cp ~/pipeline16044/settings/.bashros ~/.ros/
+cp ~/pipelineUSMA/settings/.bashros ~/.ros/
 echo '. ~/.ros/.bashgazebo' >> ~/.bashrc
-cp ~/pipeline16044/settings/.bashgazebo ~/.ros
+cp ~/pipelineUSMA/settings/.bashgazebo ~/.ros
 
 
 mkdir -p ~/ros/src

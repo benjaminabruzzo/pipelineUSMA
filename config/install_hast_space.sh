@@ -19,7 +19,7 @@ echo "source ~/ros/devel/setup.bash" >> ~/ros/build_hast.bash
 cd ~/ros && chmod +x build_hast.bash && bash build_hast.bash
 
 
-roscd metahast && cd ../hast/cam_info && cp *.yaml ~/.ros/camera_info && cd ~/pipeline16044
+roscd metahast && cd ../hast/cam_info && cp *.yaml ~/.ros/camera_info && cd ~/pipelineUSMA
 
 
 # catkin_remake && catkin_remake

@@ -7,7 +7,7 @@ echo "allowed=true" | sudo tee --append /etc/geoclue/geoclue.conf > /dev/null
 echo "system=false" | sudo tee --append /etc/geoclue/geoclue.conf > /dev/null
 echo "users=" | sudo tee --append /etc/geoclue/geoclue.conf > /dev/null
 
-cp ~/pipeline16044/settings/redshift.conf ~/.config/ 
+cp ~/pipelineUSMA/settings/redshift.conf ~/.config/ 
 
 # create an autostart application: windows->search for startup
 # name: autostart-redshift
