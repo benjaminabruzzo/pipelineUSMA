@@ -6,7 +6,6 @@ sudo apt-get install -y ros-kinetic-navigation ros-kinetic-ardrone-autonomy ros-
 rosdep install ardrone_autonomy
 
 cd ~/ros && rm -rf build && rm -rf devel
-cd ~/pipelineUSMA/config && bash install_multimaster.sh && cd ~/pipelineUSMA
 cd ~/pipelineUSMA/config && bash init_usma.sh && cd ~/pipelineUSMA
 cd ~/pipelineUSMA/config && bash install_tex.sh && cd ~/pipelineUSMA
 cd ~/pipelineUSMA/config && bash setup_redshift.sh && cd ~/pipelineUSMA
